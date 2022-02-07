@@ -95,7 +95,7 @@ namespace Assignment02
                         break;
                     case 4:
                         contin = false;
-                        convertion = "4-Convert Fahrenheit to Kelvin";
+                        convertion = "4-Convert Fahrenheit to Kelvin  ";
                         consoleRead();
                         conve = new Conversion(value);
                         result = conve.ConvertFahrenheitToKelvin();
