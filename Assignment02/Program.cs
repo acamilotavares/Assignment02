@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment02
 {
-    public class Program
+     public class Program
     {
 
         private double value;
@@ -41,9 +41,9 @@ namespace Assignment02
              6.Convert Kelvin to Fahrenheit
 
              7.Exit*/
-
+         
             bool contin = true;
-
+         
 
             while (contin)
             {
@@ -57,19 +57,20 @@ namespace Assignment02
         " 7-Exit\r\n");
 
                 string choice = Console.ReadLine();
-
                 int option = int.Parse(choice);
+
+              
+
                 Conversion conve;
 
                 switch (option)
                 {
-
                     case 1:
                         contin = false;
                         convertion = "1-Convert Celsius to Fahrenheit";
                         consoleRead();
-                        conve = new Conversion(value);
-                        result = conve.ConvertCelciusToFahrenheit();
+                        conve =  new Conversion(value);
+                        result =  conve.ConvertCelciusToFahrenheit();
                         Console.WriteLine(result);
                         break;
 
@@ -88,13 +89,17 @@ namespace Assignment02
                         consoleRead();
                         conve = new Conversion(value);
                         result = conve.ConvertFahrenheitToCelsius();
+
+                        result = Math.Round(result, 2);
                         Console.WriteLine(result);
                         break;
                     case 4:
+                        contin = false;
                         convertion = "4-Convert Fahrenheit to Kelvin";
                         consoleRead();
                         conve = new Conversion(value);
                         result = conve.ConvertFahrenheitToKelvin();
+                        result = Math.Round(result, 2);
                         Console.WriteLine(result);
                         break;
 
@@ -108,7 +113,7 @@ namespace Assignment02
                         break;
                     case 6:
                         contin = false;
-                        convertion = "6-Convert Kelvin to Fahrenheit";
+                        convertion = "6-Convert Kelvin to Fahrenheit";//ok
                         consoleRead();
                         conve = new Conversion(value);
                         result = conve.ConvertKelvinToFahrenheit();
@@ -117,7 +122,7 @@ namespace Assignment02
                     case 7:
                         Environment.Exit(0);
                         break;
-
+                    
                     default:
                         contin = true;
                         Console.WriteLine("Informe valor correto:");
@@ -134,8 +139,7 @@ namespace Assignment02
             Console.WriteLine(convertion);
             Console.WriteLine("Informe valor:");
             string stvalue = Console.ReadLine();
-            value = double.Parse(stvalue);
-
+            
         }
 
     }

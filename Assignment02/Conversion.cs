@@ -11,6 +11,8 @@ namespace Assignment02
 
         private double valueConverter;
 
+      
+
         public Conversion()
         {
 
@@ -25,7 +27,10 @@ namespace Assignment02
         public double ConvertCelciusToFahrenheit()
         {
             //(1 °C × 9/5) + 32 = 33,8 °F
+            
+            
             return (valueConverter * 9 / 5) + 32;
+
 
         }
 
@@ -57,6 +62,14 @@ namespace Assignment02
         {
             //(32 °F − 32) × 5/9 = 0 °C
             return (valueConverter - 32) * 5 / 9;
+        }
+
+
+        public double ValueConverter { get => valueConverter; }
+
+        public double getValueConverter()
+        {
+            return valueConverter;
         }
 
     }
