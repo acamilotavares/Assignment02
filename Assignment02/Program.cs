@@ -125,7 +125,7 @@ namespace Assignment02
                     
                     default:
                         contin = true;
-                        Console.WriteLine("Informe valor correto:");
+                        Console.WriteLine("Inform correct  value:");
                         break;
                 }
 
@@ -137,7 +137,7 @@ namespace Assignment02
         private void consoleRead()
         {
             Console.WriteLine(convertion);
-            Console.WriteLine("Informe valor:");
+            Console.WriteLine("Inform value:");
             string stvalue = Console.ReadLine();
             
         }
