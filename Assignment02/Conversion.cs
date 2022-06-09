@@ -9,6 +9,8 @@ namespace Assignment02
     public class Conversion
     {
 
+       //teste
+
         private double valueConverter;
 
       
